@@ -1,0 +1,49 @@
+# FastAPI & Web
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Redis
+redis
+hiredis
+
+# JWT
+pyjwt[crypto]
+cryptography
+
+# AWS
+boto3
+botocore
+
+# HTTP Client
+httpx
+aiohttp
+
+# Config
+python-dotenv
+pydantic
+pydantic-settings
+
+# Background Tasks (optional)
+celery
+flower
+
+# Utilities
+python-dateutil
+pytz
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+black
+flake8
+mypy
+
+# Logging
+structlog
