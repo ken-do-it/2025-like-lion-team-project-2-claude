@@ -11,7 +11,7 @@ import uvicorn
 from app.core.config import settings
 from app.core.database import check_db_connection, init_db, close_db
 from app.core.redis import get_redis
-from app.routes import users, tracks, follows, interactions
+from app.routes import users, tracks, follows, interactions, playlists, tags, history, notifications
 
 # FastAPI app creation
 app = FastAPI(
@@ -37,6 +37,10 @@ app.include_router(users.router)
 app.include_router(tracks.router)
 app.include_router(follows.router)
 app.include_router(interactions.router)
+app.include_router(playlists.router)
+app.include_router(tags.router)
+app.include_router(history.router)
+app.include_router(notifications.router)
 
 
 # Health Check Endpoint
